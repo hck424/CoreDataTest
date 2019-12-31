@@ -57,6 +57,7 @@
     if (cell == nil) {
         cell = [[NSBundle mainBundle] loadNibNamed:@"JooSoCell" owner:self options:nil].firstObject;
     }
+    
     JooSo *jooso = [_arrData objectAtIndex:indexPath.row];
     [cell configurationData:jooso];
     
